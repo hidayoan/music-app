@@ -1,0 +1,13 @@
+import React from "react";
+import "./styles/index.scss";
+
+function SlidebarOption({ title, Icon }) {
+	return (
+		<div className="slidebarOption">
+			{Icon && <Icon className="slidebarOption__icon" />}
+			{Icon ? <h4>{title}</h4> : <p>{title}</p>}
+		</div>
+	);
+}
+
+export default SlidebarOption;
